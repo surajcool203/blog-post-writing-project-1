@@ -26,11 +26,15 @@
     border: 4px solid rgb(247,182,96);
     padding: 10px;
     justify-content: space-evenly;
+    grid-template-areas: 
+    "top top"
+    "middle middle"
+    "bottom bottom";
      } 
  .box{
     display: flex;
     align-items: stretch;
-    justify-content:space-evenly;
+    justify-content:space-around;
     border: 1px solid red;
     padding: 5px;
     flex-direction: row;
@@ -41,30 +45,36 @@
     justify-content: space-around;
     flex-direction: column;
     font-size: inherit;
+    grid-area: top left;
 }
 
-#two{
-
+#two{ 
+    display: flex;
     justify-content: space-around;
     flex-direction: column;
     font-size: inherit;
-    
+    grid-area: top right;
+    padding-bottom: 20px;
 }
 #three{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-size: large;
+    grid-area: middle left;
 }
 #four{
+    display: flex;
     justify-content: space-around;
     flex-direction: column;
     font-size: large;
+    grid-area: middle right;
 }
 #five{
     justify-content: space-around;
     flex-direction: column;
     font-size: large;
+    grid-area: bottom left;
 }
 #six{
     justify-content: space-around;
@@ -112,13 +122,14 @@
        
         <div class="box"id="two">
             <div class="row">
-                <h3 style="color: coral;">world</h3>
+                <h3 style="color:coral;">world</h3>
                 <div class="inside"><b>Example Blog Post</b></div>
                 <p style="color:grey;">Nov 12</p> </div>
                <p style="font-height:0.8 ;"> This card represents an example blog post.</p>
-               <a href="#editing"> Continue reading</a><br>
+               <a href="#editing"> Continue reading</a>
              </div>
-      </div>
+        </div>
+
         
       <div class="box"id="three">
         <div class="row">
@@ -140,7 +151,8 @@
                <p style="font-height:0.8 ;"> This card represents an example blog post.</p>
                <a href="#editing"> Continue reading</a>
              </div>
-        </div>
+    </div>
+
        
        
        
@@ -156,15 +168,18 @@
        
        
        
-        <div class="box"id="six"><div class="row">
-            <h3 style="color: coral;">world</h3>
-            <div class="inside"><b>Example Blog Post</b></div>
-            <p style="color:grey;">Nov 12</p> </div>
-           <p style="font-height:0.8 ;"> This card represents an example blog post.</p>
-           <a href="#editing"> Continue reading</a>
-         </div>
+        <div class="box"id="six">
+            <div class="row">
+                <h3 style="color:coral;">world</h3>
+                <div class="inside"><b>Example Blog Post</b></div>
+                <p style="color:grey;">Nov 12</p> </div>
+               <p style="font-height:0.8 ;"> This card represents an example blog post.</p>
+               <a href="#editing"> Continue reading</a>
+             </div>
         </div>
       </div>
+     
+     
       <div class="footer">
         <p id="foot">Blog template built for <a href="#editing">Bootstrap</a> </p>
         <p class="" id="footed"><a href="#editing">See Design System</a></p>
