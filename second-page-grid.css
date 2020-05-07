@@ -1,0 +1,56 @@
+.container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+     grid-template-columns: 800px;
+      grid-template-rows: 50px 1300px;
+      grid-template-areas: 
+      "hd "
+      "sd"
+      "main"
+      "ft";
+      border: 2px solid yellow ;
+      grid-row: auto;
+  }
+  .box{
+    border: 1px solid red ;
+    background: #F8FA9D;
+    }
+  .header{
+    grid-area:hd;
+  }
+  .footer{
+    grid-area:ft;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: 	#C0C0C0;
+    text-align: center;
+  }
+  #foot {
+     margin-top: 20px;
+     padding-top:20px;
+     color: black;
+  }
+  .sidebar{
+    grid-area:sd;
+    justify-content: start;
+    flex-direction: row;
+    text-align: inherit;
+  }
+  .content{
+    grid-area:main;
+  }
+  @media(min-width: 900px){
+    .container{
+      display: grid;
+      grid-template-columns: 800px ;
+        grid-template-rows: 50px 1300px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd "
+        "sd sd sd sd sd sd sd main"
+        "ft ft ft ft ft ft ft ft ";
+        border: 2px solid blueviolet;
+    }
+  }

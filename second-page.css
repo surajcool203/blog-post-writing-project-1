@@ -1,0 +1,21 @@
+          .heading {
+  display:flex;
+  justify-content: space-evenly;
+  text-align:center;
+  text-decoration: underline;
+
+}
+ 
+  #archi {
+      line-height:0.9;
+  }
+.archives{
+  text-align: center !important;
+}
+.elsewhere{
+  text-align: center !important;
+}
+.about{
+  text-align: center !important;
+}
+

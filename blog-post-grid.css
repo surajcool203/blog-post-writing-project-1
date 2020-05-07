@@ -1,0 +1,15 @@
+.container{
+    display: grid;
+    width: auto;
+    margin: auto;
+    grid-column: 500px;
+    grid-row: 400px;
+    grid-template-rows: 250px ;
+    grid-template-columns: 300px 300px ;
+    grid-gap: 10px;
+    border: 4px solid rgb(247,182,96);
+    padding: 10px;
+    justify-content: space-evenly;
+    
+    
+     } 

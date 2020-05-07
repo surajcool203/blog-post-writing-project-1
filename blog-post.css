@@ -1,0 +1,97 @@
+.heading {
+    display:flex;
+    justify-content: space-evenly;
+    text-align:center;
+    padding:40px;
+    text-decoration: underline;
+    
+  }
+ 
+   .box{
+      display: flex;
+      align-items: stretch;
+      justify-content:space-around;
+      border: 1px solid red;
+      padding:2px;
+      flex-direction: row;
+      box-shadow: 5px 5px 1px ;
+    }
+  
+  #one{
+      padding-bottom: 35px;
+      justify-content: space-around;
+      flex-direction: column;
+      font-size: medium;
+      grid-area: top left;
+  }
+  
+  
+  
+  #two{ 
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      font-size: medium;
+      grid-area: top right;
+      padding-bottom: 20px;
+  }
+  
+  #three{
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: medium;
+      grid-area: middle left;
+  }
+  
+  #four{
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      font-size: medium;
+      grid-area: middle right;
+  }
+  
+  
+  #five{
+      justify-content: space-around;
+      flex-direction: column;
+      font-size: medium;
+      grid-area: bottom left;
+      padding-bottom: 20px;
+  }
+  
+  
+  #six{
+      justify-content: space-around;
+      flex-direction: column;
+      font-size: medium;
+      padding-bottom: 20px;
+  }
+  
+  
+  .footer {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width: 100% !important;
+      background-color: #f8f8ff;
+      color: 	#C0C0C0;
+      text-align: center;
+    }
+    #foot {
+       margin-top: 20px;
+       padding-top:20px;
+    }
+    #footed {
+      padding-bottom: 25px;
+    }
+    .button{
+        box-shadow: 10px 10px 5px grey;
+    }
+    .button:hover{
+        box-shadow: 0 15px 35px rgba(0,0,0,5);
+    }
+   
